@@ -61,3 +61,103 @@ body {
 	image-rendering: crisp-edges;
 }
 
+@keyframes enter-fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes enter-fade-down {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes enter-scale-in {
+	from {
+		opacity: 0;
+		transform: scale(0.97);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.enter-fade-up {
+	opacity: 0;
+	animation: enter-fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.enter-fade-down {
+	opacity: 0;
+	animation: enter-fade-down 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.enter-scale-in {
+	opacity: 0;
+	animation: enter-scale-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.enter-delay-1 {
+	animation-delay: 0.08s;
+}
+
+.enter-delay-2 {
+	animation-delay: 0.16s;
+}
+
+.enter-delay-3 {
+	animation-delay: 0.24s;
+}
+
+.enter-delay-4 {
+	animation-delay: 0.32s;
+}
+
+.enter-delay-5 {
+	animation-delay: 0.42s;
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(18px);
+	transition:
+		opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.enter-fade-up,
+	.enter-fade-down,
+	.enter-scale-in {
+		animation: none;
+		opacity: 1;
+	}
+
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
+

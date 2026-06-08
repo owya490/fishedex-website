@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AppMockup from '$lib/components/AppMockup.svelte';
+	import Reveal from '$lib/components/Reveal.svelte';
 
 	const showcases = [
 		{
@@ -23,16 +24,17 @@
 
 <section class="border-t border-fish-track bg-fish-bg px-6 py-20 md:py-28">
 	<div class="mx-auto max-w-6xl">
-		<div class="mb-16 text-center md:mb-20">
+		<Reveal class="mb-16 text-center md:mb-20">
 			<h2 class="font-pokemon mb-3 text-xl tracking-wide text-fish-ink uppercase md:text-2xl">
 				Everything you need
 			</h2>
 			<p class="text-fish-muted">A fishing journal with soul — retro vibes, modern tools.</p>
-		</div>
+		</Reveal>
 
 		<div class="space-y-20 md:space-y-24">
 			{#each showcases as showcase, i (showcase.title)}
-				<div
+				<Reveal
+					delay={i * 80}
 					class="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16 {i % 2 === 1
 						? 'md:[&>*:first-child]:order-2'
 						: ''}"
@@ -54,7 +56,7 @@
 							{showcase.description}
 						</p>
 					</div>
-				</div>
+				</Reveal>
 			{/each}
 		</div>
 	</div>

@@ -21,7 +21,9 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Waitlist
 
-The waitlist form validates emails server-side via a SvelteKit form action (`+page.server.ts`). Signups are logged to the console — wire up your provider (Supabase, Resend, Loops, etc.) in that file when ready.
+The waitlist form validates emails server-side and saves signups to the `waitlist_signups` table in Supabase.
+
+Copy `.env.example` to `.env` and set `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` from [Supabase → Settings → API](https://supabase.com/dashboard/project/kfjmzsukylthtstjmmcz/settings/api). Add the same variables in Vercel for production.
 
 ## Deploy
 

@@ -12,8 +12,8 @@
 	<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
 </svelte:head>
 
-<header class="sticky top-0 z-50 border-b-2 border-fish-ink bg-fish-red">
-	<div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
+<header class="enter-fade-down sticky top-0 z-50 border-b-2 border-fish-ink bg-fish-red">
+	<div class="mx-auto flex max-w-5xl items-center justify-between py-3 pr-6 pl-4 md:px-6">
 		<a href={resolve('/')} class="flex items-center gap-3">
 			<img
 				src="/images/fishedex-icon.png"

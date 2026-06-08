@@ -14,7 +14,9 @@
 
 	<div class="relative mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1fr_1.15fr] md:gap-6 lg:gap-10">
 		<div class="order-2 text-center md:order-1 md:text-left">
-			<div class="mb-5 flex items-center justify-center gap-2.5 md:justify-start md:gap-3">
+			<div
+				class="enter-fade-up mb-5 flex items-center justify-center gap-2.5 md:justify-start md:gap-3"
+			>
 				<img
 					src="/images/fishedex-icon.png"
 					alt=""
@@ -28,23 +30,27 @@
 			</div>
 
 			<h1
-				class="font-pokemon mb-5 text-2xl leading-tight tracking-wide text-fish-ink uppercase md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]"
+				class="enter-fade-up enter-delay-1 font-pokemon mb-5 text-2xl leading-tight tracking-wide text-fish-ink uppercase md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]"
 			>
 				Cast off on your<br class="hidden sm:block" />
 				Fishédex journey
 			</h1>
-			<p class="mx-auto mb-8 max-w-md text-base leading-relaxed text-fish-muted md:mx-0 md:text-lg">
+			<p
+				class="enter-fade-up enter-delay-2 mx-auto mb-8 max-w-md text-base leading-relaxed text-fish-muted md:mx-0 md:text-lg"
+			>
 				Your Pokédex for fishing. Catch 'em all.
 			</p>
 			<a
 				href="#waitlist"
-				class="font-pokemon inline-block border-2 border-fish-ink bg-fish-red px-8 py-3 text-sm tracking-wider text-white uppercase transition-colors hover:bg-fish-red-dark"
+				class="enter-fade-up enter-delay-3 font-pokemon inline-block border-2 border-fish-ink bg-fish-red px-8 py-3 text-sm tracking-wider text-white uppercase transition-colors hover:bg-fish-red-dark"
 			>
 				Join the waitlist
 			</a>
 		</div>
 
-		<div class="order-1 flex justify-center md:order-2 md:justify-end md:overflow-visible">
+		<div
+			class="enter-scale-in enter-delay-2 order-1 flex justify-center md:order-2 md:justify-end md:overflow-visible"
+		>
 			<AppMockup
 				src="/images/mockup-landing-left.png"
 				alt="Fishédex app on iPhone — cast off on your fishing journey"

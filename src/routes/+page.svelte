@@ -2,6 +2,7 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import WaitlistForm from '$lib/components/WaitlistForm.svelte';
+	import Reveal from '$lib/components/Reveal.svelte';
 	import type { ActionData } from './$types';
 
 	let { form }: { form: ActionData } = $props();
@@ -20,7 +21,9 @@
 <WaitlistForm {form} />
 
 <footer class="border-t-2 border-fish-ink/10 bg-fish-bg px-6 py-8">
-	<div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+	<Reveal
+		class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left"
+	>
 		<div class="flex items-center gap-3">
 			<img
 				src="/images/fishedex-icon.png"
@@ -45,5 +48,5 @@
 			</p>
 			<p>© {new Date().getFullYear()} Fishédex. Catch 'em all.</p>
 		</div>
-	</div>
+	</Reveal>
 </footer>

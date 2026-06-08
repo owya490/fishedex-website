@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import type { ActionData } from '../../../routes/$types';
+	import Reveal from '$lib/components/Reveal.svelte';
+	import type { ActionData } from '../../routes/$types';
 
 	let { form }: { form: ActionData } = $props();
 
@@ -9,7 +10,7 @@
 
 <section id="waitlist" class="px-6 py-20 md:py-28">
 	<div class="mx-auto max-w-xl">
-		<div class="border-2 border-fish-ink bg-fish-card p-8 md:p-10">
+		<Reveal class="border-2 border-fish-ink bg-fish-card p-8 md:p-10">
 			<div class="mb-8 text-center">
 				<h2 class="font-pokemon mb-3 text-xl tracking-wide text-fish-ink uppercase md:text-2xl">
 					Join the waitlist
@@ -73,6 +74,6 @@
 					</button>
 				</form>
 			{/if}
-		</div>
+		</Reveal>
 	</div>
 </section>
