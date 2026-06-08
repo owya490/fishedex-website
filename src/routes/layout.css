@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Pokemon Classic';
+	src: url('/fonts/pokemon-classic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satoshi';
+	src: url('/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+	font-weight: 300 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-pokemon: 'Pokemon Classic', monospace;
+	--font-satoshi: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+	--font-sans: var(--font-satoshi);
+
+	--color-fish-red: #d12621;
+	--color-fish-red-dark: #a81e1a;
+	--color-fish-ink: #1f2129;
+	--color-fish-muted: #8c8c94;
+	--color-fish-cream: #fff5d1;
+	--color-fish-ocean: #2b8ab3;
+	--color-fish-coral: #ff667a;
+	--color-fish-green: #42bf63;
+	--color-fish-blue: #3d7ad9;
+	--color-fish-bg: #f2f2f5;
+	--color-fish-card: #ffffff;
+	--color-fish-track: #dbdbde;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-fish-ink);
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+.pixel-border {
+	box-shadow:
+		0 0 0 2px #1f2129,
+		4px 4px 0 0 #1f2129;
+}
+
+.pixel-border-sm {
+	box-shadow: 0 0 0 2px #1f2129;
+}
+
+.pixel-img {
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
