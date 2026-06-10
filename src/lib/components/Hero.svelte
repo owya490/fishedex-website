@@ -2,15 +2,15 @@
 	import AppMockup from '$lib/components/AppMockup.svelte';
 </script>
 
-<section class="relative overflow-hidden bg-white px-6 pt-14 pb-20 md:pt-20 md:pb-28">
-	<div
-		class="pointer-events-none absolute -top-16 right-0 h-[560px] w-[560px] rounded-full bg-fish-bg md:-right-32 lg:h-[640px] lg:w-[640px]"
-		aria-hidden="true"
-	></div>
-	<div
-		class="pointer-events-none absolute bottom-0 left-0 h-64 w-64 -translate-x-1/3 rounded-full bg-fish-track/40"
-		aria-hidden="true"
-	></div>
+<section class="relative bg-white px-6 pt-14 pb-20 md:pt-20 md:pb-28">
+	<div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+		<div
+			class="absolute -top-16 right-0 h-[560px] w-[560px] rounded-full bg-fish-bg md:-right-32 lg:h-[640px] lg:w-[640px]"
+		></div>
+		<div
+			class="absolute bottom-0 left-0 h-64 w-64 -translate-x-1/3 rounded-full bg-fish-track/40"
+		></div>
+	</div>
 
 	<div class="relative mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1fr_1.15fr] md:gap-6 lg:gap-10">
 		<div class="order-2 text-center md:order-1 md:text-left">
@@ -55,7 +55,7 @@
 				src="/images/mockup-landing-left.png"
 				alt="Fishédex app on iPhone — cast off on your fishing journey"
 				size="lg"
-				class="translate-x-2 md:translate-x-6 lg:translate-x-10"
+				class="translate-x-1 md:translate-x-3 lg:translate-x-5"
 			/>
 		</div>
 	</div>
